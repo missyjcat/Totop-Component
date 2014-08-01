@@ -16,8 +16,7 @@
  * of toTop image/element
  */
 
-var Totop = function() {
-}
+var Totop = function() {};
 
 Totop.prototype.init = function(el,imgSrc,width,height) {
     
@@ -29,7 +28,7 @@ Totop.prototype.init = function(el,imgSrc,width,height) {
     this.height = height || 50;
     this.renderElements();
     this.initializeEvents();
-},
+};
 
 Totop.prototype.renderElements = function() {
 
@@ -69,7 +68,7 @@ Totop.prototype.renderElements = function() {
         toTop.style.right = 0 - this.width - 15 + 'px';
         toTop.style.bottom = '60px';
     }
-},
+};
 
 Totop.prototype.appear = function() {
     // If container isn't the window, just fade it in
@@ -87,7 +86,7 @@ Totop.prototype.appear = function() {
             opacity: .3,
         });
     }
-},
+};
 
 Totop.prototype.disappear = function() {
     // code that animates top button to disappear
@@ -108,7 +107,7 @@ Totop.prototype.disappear = function() {
             opacity: 0
         });
     }
-},
+};
 
 Totop.prototype.initializeEvents = function() {
     
@@ -154,6 +153,6 @@ Totop.prototype.initializeEvents = function() {
             $(thisTopLink + ' .totop-box').animate({opacity: .3});
     });
 
-}
+};
 
 
